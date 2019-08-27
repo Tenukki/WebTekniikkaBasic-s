@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+      function muunnos(taulukko) {
+        let lista,jono;
+        jono = 0;
+        lista = [];
+        for(x = 0;x < taulukko.length;x++){
+          jono = (-taulukko[x]);
+          lista.push(jono);
+        }
+        return lista;
+      }
+
+      let taulukko;
+      taulukko = [-5,-3,5,6,0];
+      console.log(muunnos(taulukko).toString());
+    </script>
+
+</body>
+</html>

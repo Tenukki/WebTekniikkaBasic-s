@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        let alku,loppu;
+        alku = parseInt(prompt("Anna aloitus vuosi"));
+        loppu = parseInt(prompt("Anna lopetus vuosi"));
+
+        for(x = alku; x <= loppu;x++){
+          if (x % 4 == 0 && ( x % 100 != 0 || x % 400 == 0 )){
+            console.log("VUOSI" + x);
+          }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        'use strict';
+        let lista = [];
+        let luku;
+        while (true){
+          luku = parseInt(prompt("Anna luku, nolla lopettaa"));
+          if(luku == 0){
+            break;
+          }
+          lista.push(luku);
+        }
+        lista.sort(function(a, b){return a - b});
+        for (x = 0;x < lista.length;x++){
+          console.log(lista[x]);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+      function muunnos(luku) {
+        if(luku < 2){
+          return luku;
+        }
+        return muunnos(luku -1) + muunnos(luku -2);
+      }
+
+      let luku;
+      luku = parseInt(prompt("Anna luku"));
+      for(x = 0;x < luku;x++){
+        console.log("luku"+x+ " "+muunnos(x));
+      }
+    </script>
+
+</body>
+</html>

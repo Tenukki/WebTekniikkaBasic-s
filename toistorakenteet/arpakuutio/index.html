@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        let lukumaara,arpa,arvonta;
+        arpa = 0;
+        lukumaara = parseInt(prompt("Montako arpakuutiota haluat?"))
+        for(x = 0;x<lukumaara;x++){
+          arvonta = Math.floor(Math.random()*5+1);
+          console.log(arvonta);
+          arpa += arvonta;
+        }
+        alert("Silmälukujen summa: " +arpa);
+    </script>
+
+</body>
+</html>

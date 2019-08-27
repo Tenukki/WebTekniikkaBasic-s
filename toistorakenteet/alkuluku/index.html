@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        let arvo;
+        arvo = parseInt(prompt("Anna luku"));
+        if(arvo >  1){
+          for(x = 2;x <= arvo;x++){
+            if(arvo % x == 0){
+              alert(arvo + "Ei ole alkuluku");
+              break;
+            }else{
+              alert("on alkuluku");
+              break;
+            }
+          }
+        }else{
+          alert("Ei ole alkuluku");
+        }
+    </script>
+
+</body>
+</html>

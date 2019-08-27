@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        'use strict';
+        let lista = [];
+        let numero;
+        while (true){
+          numero = parseInt(prompt("Anna numero, väliltä 1-1000"));
+          if(numero < 1 || numero > 1000){
+            alert("Numero ei ollut väliltä 1-1000");
+            continue;
+          }
+          if(lista.includes(numero)){
+            alert("Luku on jo listassa");
+            break;
+          }
+          lista.push(numero);
+        }
+    </script>
+
+</body>
+</html>

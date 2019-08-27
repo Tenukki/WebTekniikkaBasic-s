@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        'use strict';
+        let suku,arvo;
+        suku = prompt("Anna sukupuoli, kaikki pienellä kirjaimella");
+        arvo = parseInt(prompt("Anna hemoglopiini arvo"));
+        switch (suku) {
+          case 'mies':
+            if(arvo >= 134 && arvo <= 195){
+              alert("Arvot ovat normaalit")
+            }else if(arvo < 134){
+              alert("Alhaiset arvot");
+            }else if(arvo > 195){
+              alert("Suuret arvot");
+            }
+          case 'nainen':
+            if(arvo >= 117 && arvo <= 175){
+              alert("Arvot ovat normaalit")
+            }else if(arvo < 117){
+              alert("Alhaiset arvot");
+            }else if(arvo > 195){
+              alert("Suuret arvot");
+            }
+
+        }
+    </script>
+
+</body>
+</html>

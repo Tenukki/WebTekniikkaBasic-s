@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+      function muunnos(taulukko) {
+        let lista,jono;
+        jono = "";
+        lista = taulukko;
+        for(x = 0;x < lista.length;x++){
+          jono += lista[x];
+        }
+        return jono;
+      }
+
+      let taulukko;
+      taulukko = ["Heikki","Seppo","Oskari"];
+      console.log(muunnos(taulukko));
+    </script>
+
+</body>
+</html>

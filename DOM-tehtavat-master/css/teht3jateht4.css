@@ -1,0 +1,7 @@
+ul{
+    list-style-type: none;
+}
+/*ai odd*/
+li:nth-child(even){
+    background-color: gray;
+}

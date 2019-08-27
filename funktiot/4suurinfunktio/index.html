@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+      function muunnos(luku,luku2,luku3) {
+        if(luku == luku2 && luku == luku3 && luku2 == luku && luku2 == luku3 && luku3 == luku && luku3 == luku2){
+          return "Luvut ovat yhtäsuuret";
+        }else{
+          return Math.max(luku,luku2,luku3);
+        }
+      }
+
+      let lukija,lukija2,lukija3;
+      lukija = parseInt(prompt("Anna luku"));
+      lukija2 = parseInt(prompt("Anna luku"));
+      lukija3 = parseInt(prompt("Anna luku"));
+
+      console.log(muunnos(lukija,lukija3,lukija2));
+    </script>
+
+</body>
+</html>

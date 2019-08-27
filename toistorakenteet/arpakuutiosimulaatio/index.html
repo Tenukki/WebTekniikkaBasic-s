@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        let lukumaara,summa;
+        lukumaara = parseInt(prompt("Anna noppien lukumaara"));
+        summa = 0;
+        while (true){
+          summa = parseInt(prompt("Anna silmälukujen summa"));
+          if(summa <= lukumaara*6 && summa > 0){
+            summa = summa;
+            break;
+          }else{
+            summa = 0;
+          }
+        }
+
+        let noppa,noppiensumma,osumat;
+        osumat = 0;
+
+        for(x = 0;x < 1000;x++){
+          noppiensumma = 0;
+          for(y = 0;y < 3;y++){
+            noppa = Math.floor(Math.random()*6+1);
+            noppiensumma += noppa;
+          }
+          if(noppiensumma == summa){
+            osumat++;
+          }
+        }
+
+        console.log("Todennäköisyys on: " + (osumat/1000) + " %");
+    </script>
+
+</body>
+</html>

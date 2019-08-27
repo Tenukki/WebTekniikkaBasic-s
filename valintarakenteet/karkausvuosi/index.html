@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        'use strict';
+        let luku;
+        luku = parseInt(prompt("Anna vuosiluku"));
+
+        if (luku % 4 == 0 && ( luku % 100 != 0 || luku % 400 == 0 )){
+          alert("Vuosi on karkausvuosi");
+        }else {
+          alert("Vuosi ei ole karkausvuosi");
+        }
+
+
+    </script>
+
+</body>
+</html>

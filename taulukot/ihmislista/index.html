@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script language="JavaScript">
+        'use strict';
+        let maara,nimi;
+        let lista = [];
+        console.log("Moi");
+        maara = parseInt(prompt("Anna lukumaara"));
+        for(x = 0;x < maara;x++){
+          nimi = prompt("Anna nimi");
+          lista.push(nimi);
+        }
+        console.log(lista.length);
+        for(x = 0; x < lista.length;x++){
+          console.log((x+1)+". "+lista[x]);
+        }
+    </script>
+
+</body>
+</html>
